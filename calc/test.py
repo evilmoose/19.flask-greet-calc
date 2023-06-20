@@ -20,7 +20,7 @@ class TestCalculator(unittest.TestCase):
         self.assertIn(b'40', response.data)
         self.assertEqual(response.status_code, 200)
 
-    def test_division(self):
+    def test_divide(self):
         response = self.client.get('/div?a=2&b=2')
         self.assertIn(b'1', response.data)
         self.assertEqual(response.status_code, 200)

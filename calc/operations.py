@@ -1,21 +1,16 @@
 """Basic math operations."""
 
 def add(a, b):
-    """Add a and b."""
-    
     return a + b
 
-def sub(a, b):
-    """Substract b from a."""
-
+def subtract(a, b):
     return a - b
 
-def mult(a, b):
-    """Multiply a and b."""
-
+def multiply(a, b):
     return a * b
 
-def div(a, b):
-    """Divide a by b."""
-
-    return a / b
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero"
